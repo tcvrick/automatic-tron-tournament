@@ -1,7 +1,10 @@
 # Automated TRON Tournament
 
 This project contains a framework for running an automatic TRON tournament (alongside an implementation of the game itself). Participants can enter an agent 
-into the tournament by providing code which comforms to a re
+into the tournament by providing code which conforms to a simple interface to the game.
+
+When the tournament is run, the participants are randomly (and repeatedly) played against each other. After each game,
+the MMR ([TrueSkill](https://trueskill.org/)) for each participant is updated and stored in a [TinyDB](https://tinydb.readthedocs.io/en/stable/intro.html) database.
 
 ## Setup
 
